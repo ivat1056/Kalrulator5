@@ -2,27 +2,23 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
-import android.os.Bundle;
 import android.content.Intent;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity2 extends AppCompatActivity {
     boolean isNew = true;
     TextView firstNumber;
 
     TextView result;
     String operator;
     String oldNumber;
-
-
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
+        setContentView(R.layout.activity_main2);
         firstNumber = findViewById(R.id.firstNumber);
 
         result = findViewById(R.id.result);
@@ -92,7 +88,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
 
-
     }
 
     public void clickEqual(View view) {
@@ -100,16 +95,18 @@ public class MainActivity extends AppCompatActivity {
         Double resul = 0.0;
         switch (operator) {
             case "+":
-                resul = Double.parseDouble(oldNumber) + Double.parseDouble(newNumber);
+                resul = Math.sin(Double.parseDouble(oldNumber));
                 break;
             case "-":
-                resul = Double.parseDouble(oldNumber) - Double.parseDouble(newNumber);
+                resul = Math.cos(Double.parseDouble(oldNumber));
                 break;
             case "X":
-                resul = Double.parseDouble(oldNumber) * Double.parseDouble(newNumber);
+                resul = Math.pow(Double.parseDouble(oldNumber), Double.parseDouble(newNumber));
                 break;
             case "/":
-                resul = Double.parseDouble(oldNumber) / Double.parseDouble(newNumber);
+                Double  num1 = Double.parseDouble(oldNumber);
+                Double num2 = Double.parseDouble(newNumber);
+                resul = Math.pow(num2,1/num1);
                 break;
         }
         result.setText(String.valueOf(resul));
@@ -121,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void operation1(View view) {
 
-        Intent intent = new Intent(this, MainActivity2.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
-}
+    }

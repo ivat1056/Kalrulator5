@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".MainActivity2">
     <TextView
         android:id="@+id/firstNumber"
         android:layout_width="0dp"
@@ -125,7 +124,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/kalk"
                 android:onClick="operation"
-                android:text="@string/plus"
+                android:text="@string/sin"
                 android:textSize="20sp" />
         </TableRow>
 
@@ -168,7 +167,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/kalk"
                 android:onClick="operation"
-                android:text="@string/minus"
+                android:text="@string/cos"
                 android:textSize="20sp" />
         </TableRow>
 
@@ -201,7 +200,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/kalk"
                 android:onClick="operation"
-                android:text="@string/multiply"
+                android:text="@string/ct"
                 android:textSize="20sp" />
 
             <Button
@@ -211,7 +210,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/kalk"
                 android:onClick="operation"
-                android:text="@string/divide"
+                android:text="@string/k"
                 android:textSize="20sp"
                 app:iconTint="#9C27B0" />
 
@@ -226,14 +225,10 @@
                 android:layout_weight="1"
                 android:onClick="operation1"
                 android:background="@drawable/kalk"
-                android:text="@string/vk2"
+                android:text="@string/vk1"
                 android:textSize="20sp"
                 android:textColor="#9C27B0" />
         </TableRow>
     </TableLayout>
-
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

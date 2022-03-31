@@ -16,4 +16,10 @@
     <string name="zero"> 0 </string>
     <string name="multiply"> X </string>
     <string name="divide"> / </string>
+    <string name="vk1"> Базовые </string>
+    <string name="vk2"> Сложные </string>
+    <string name="sin"> sin </string>
+    <string name="cos"> cos </string>
+    <string name="k"> √  </string>
+    <string name="ct"> ^ </string>
 </resources>
